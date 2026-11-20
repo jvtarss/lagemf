@@ -85,10 +85,10 @@ window.DATA = {
     }
   ],
 
-  // Coloque os arquivos das logos em assets/img/parceiros/ e preencha "logo"
+  // height: altura da logo em px no desktop, ajustada para que todas tenham peso visual parecido.
   partners: [
-    { name: "CENAPAD", full: { pt: "Centro Nacional de Processamento de Alto Desempenho", en: "National Center for High Performance Computing" }, logo: "", url: "" },
-    { name: "UFMG", full: { pt: "Universidade Federal de Minas Gerais", en: "Federal University of Minas Gerais" }, logo: "", url: "" },
-    { name: "UENF", full: { pt: "Universidade Estadual do Norte Fluminense Darcy Ribeiro", en: "State University of Norte Fluminense Darcy Ribeiro" }, logo: "", url: "" }
+    { name: "CENAPAD", full: { pt: "Centro Nacional de Processamento de Alto Desempenho", en: "National Center for High Performance Computing" }, logo: "assets/img/parceiros/cenapad.png", height: 86, url: "" },
+    { name: "UFMG", full: { pt: "Universidade Federal de Minas Gerais", en: "Federal University of Minas Gerais" }, logo: "assets/img/parceiros/ufmg.png", height: 56, url: "" },
+    { name: "UENF", full: { pt: "Universidade Estadual do Norte Fluminense Darcy Ribeiro", en: "State University of Norte Fluminense Darcy Ribeiro" }, logo: "assets/img/parceiros/uenf.png", height: 80, url: "" }
   ]
 };

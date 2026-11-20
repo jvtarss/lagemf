@@ -123,22 +123,13 @@ function Partners({ t, lang }) {
   return html`<section className="section pt-0">
     <div className="container">
       <${Block}><${SectionHeading} center eyebrow=${t.home.partnersEyebrow} title=${t.home.partnersTitle} /><//>
-      <div className="row g-4 justify-content-center mt-1">
+      <div className="partners">
         ${D.partners.map((pt, i) => {
-          const body = html`
-            <div className="partner-logo">
-              ${pt.logo
-                ? html`<img src=${pt.logo} alt=${pt.name} loading="lazy" />`
-                : html`<span className="partner-placeholder">${pt.name}<small>logo</small></span>`}
-            </div>
-            <p className="partner-name">${tr(pt.full, lang)}</p>`;
-          return html`<div className="col-sm-6 col-lg-4" key=${i}>
-            <${Block} className="h-100">
-              ${pt.url
-                ? html`<a className="partner glass h-100" href=${pt.url} target="_blank" rel="noopener">${body}</a>`
-                : html`<div className="partner glass h-100">${body}</div>`}
-            <//>
-          </div>`;
+          const label = `${pt.name}, ${tr(pt.full, lang)}`;
+          const logo = html`<img src=${pt.logo} alt=${label} title=${label} style=${{ "--h": `${pt.height}px` }} />`;
+          return pt.url
+            ? html`<a key=${i} className="partner" href=${pt.url} target="_blank" rel="noopener">${logo}</a>`
+            : html`<span key=${i} className="partner">${logo}</span>`;
         })}
       </div>
     </div>
@@ -235,10 +226,7 @@ function Footer({ t }) {
 function Home({ t, lang }) {
   const h = t.home;
   return html`<${Fragment}>
-    <${Hero} size="lg" wordmark image=${PHOTOS.dna} title=${t.common.fullName} subtitle=${h.heroText}>
-      <a className="btn btn-main btn-lg" href="#/about">${h.ctaPrimary} <i className="bi bi-arrow-right"></i></a>
-      <a className="btn btn-glass btn-lg" href="#/publications">${h.ctaSecondary}</a>
-    <//>
+    <${Hero} size="lg" wordmark image=${PHOTOS.dna} title=${t.common.fullName} subtitle=${h.heroText} />
 
     <section className="section">
       <div className="container">

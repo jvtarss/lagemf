@@ -16,8 +16,6 @@ window.CONTENT = {
     },
     home: {
       heroText: "Bioinformática e biologia molecular de plantas na Universidade Federal do Tocantins, campus de Gurupi.",
-      ctaPrimary: "Sobre o laboratório",
-      ctaSecondary: "Publicações",
       introEyebrow: "Quem somos",
       introTitle: "Onde a bioinformática encontra a biologia molecular de plantas",
       introText: "O LAGEMF é um laboratório de pesquisa da Universidade Federal do Tocantins, sediado na Incubadora de Empresas do campus de Gurupi. O grupo trabalha com transcriptômica integrativa de dados RNA-seq, regulação gênica por pequenos RNAs e bancos de dados curados de microRNAs.",
@@ -94,8 +92,6 @@ window.CONTENT = {
     },
     home: {
       heroText: "Bioinformatics and plant molecular biology at the Federal University of Tocantins, Gurupi campus.",
-      ctaPrimary: "About the lab",
-      ctaSecondary: "Publications",
       introEyebrow: "Who we are",
       introTitle: "Where bioinformatics meets plant molecular biology",
       introText: "LAGEMF is a research laboratory at the Federal University of Tocantins, housed at the Business Incubator of the Gurupi campus. The group works on integrative transcriptomics of RNA-seq data, gene regulation by small RNAs and curated microRNA databases.",
